@@ -1,0 +1,206 @@
+.travail{
+  position: relative;
+  top: 50x;
+  left: 50px;
+  right: 50px;
+}
+.body{
+  display: flex;
+  flex-direction: column;
+}
+.haut,.bas{
+  font-family: 'Lexend Deca', sans-serif;
+}
+.haut{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 80px;
+}
+.textgras{
+  font-size: 28px;
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+  width: 70%;
+}
+.textcomplem{
+  font-size: 15px;
+  color:hsl(303, 10%, 53%);
+  width: 65%;
+}
+.hautdroite{
+  display: flex;
+  flex-direction: column;
+}
+.note{
+  margin-top: 10px;
+  background-color: hsl(300, 24%, 96%);
+  width: 100%;
+  height: 65px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+@media screen and (min-width:800px) {
+  #pnote{
+    position: relative;
+    right: 200px;
+  }
+  #dnote{
+    position: relative;
+    right: 100px;
+  }
+}
+
+.comm{
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 8px;
+  width: 100%;
+}
+.bas{
+  margin-top: 7%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows:50%px ;
+  column-gap: 50px;
+  row-gap:6px;
+
+}
+#comm1{
+  grid-column: 1/2;
+  position: relative;
+  bottom: 26px;
+}
+#comm2{
+  grid-column: 2/2;
+}
+#comm3{
+  grid-column:3/3;
+  position: relative;
+  top: 26px;
+}
+.photo{
+  border-radius: 100%;
+  width: 12%;
+  height: 5%;
+  position: relative;
+  left: 5%;
+}
+.pres{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  left: 20px;
+}
+.prespers{
+  position: relative;
+  left: 50px;
+}
+.nom{
+  position: relative;
+  bottom: -10px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+.commentaire{
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  left: 55px;
+  width: 60%;
+}
+.titrenom{
+  color: hsl(333, 80%, 67%);
+}
+
+
+/* gestion du responsive design*/
+
+@media screen and (max-width:800px) {
+
+.body{
+  display: flex;
+  flex-direction: column;
+}
+.haut,.bas{
+  font-family: 'Lexend Deca', sans-serif;
+}
+.haut{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.textgras{
+  font-size: 28px;
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+  width: 90%;
+}
+.textcomplem{
+  font-size: 15px;
+  color:hsl(303, 10%, 53%);
+  width: 85%;
+}
+.hautdroite{
+  display: grid;
+  row-gap: 30px;
+}
+.note{
+  background-color: hsl(300, 24%, 96%);
+  width: 100%;
+  height: 65px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.comm{
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 8px;
+  width: 100%;
+}
+.bas{
+  margin-top: 7%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.photo{
+  border-radius: 100%;
+  width: 17%;
+  height: 17%;
+  position: relative;
+  left: 5%;
+}
+.pres{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  left: 20px;
+}
+.prespers{
+  position: relative;
+  left: 50px;
+}
+.nom{
+  position: relative;
+  bottom: -10px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+.commentaire{
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  left: 55px;
+  width: 60%;
+}
+.titrenom{
+  color: hsl(333, 80%, 67%);
+}
+}
